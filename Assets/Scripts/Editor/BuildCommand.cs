@@ -179,7 +179,7 @@ static class BuildCommand
         var buildOptions   = GetBuildOptions();
         var fixedBuildPath = GetFixedBuildPath(buildTarget, buildPath, buildName);
 
-        //SetScriptingBackendFromEnv(buildTarget);
+        SetScriptingBackendFromEnv(buildTarget);
 
         var buildReport = BuildPipeline.BuildPlayer(GetEnabledScenes(), fixedBuildPath, buildTarget, buildOptions);
 
