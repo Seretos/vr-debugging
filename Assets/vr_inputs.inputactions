@@ -1,0 +1,128 @@
+{
+    "name": "vr_inputs",
+    "maps": [
+        {
+            "name": "default",
+            "id": "42cf9bfd-1fa9-4165-9d7e-dcf96bc676c7",
+            "actions": [
+                {
+                    "name": "LeftHandPosition",
+                    "type": "Value",
+                    "id": "63f9eb8f-ed61-4c1a-a6c3-10804682324e",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftHandRotation",
+                    "type": "Value",
+                    "id": "7668e92c-b698-449f-bd1c-1f7b3854637b",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RIghtHandPosition",
+                    "type": "Value",
+                    "id": "32b11ba2-e565-43cc-aeb4-53f937357d02",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightHandRotation",
+                    "type": "Value",
+                    "id": "7384f80c-72ec-49e6-82ce-549ec7a36cfc",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightHandGrab",
+                    "type": "Button",
+                    "id": "6cb592f3-906b-48d8-a082-ef1dcf78b123",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftHandGrab",
+                    "type": "Button",
+                    "id": "8bd8682b-f891-47bf-ae44-00843cd69dc3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0eba159f-3a63-40bc-9dbb-4e2f73746dab",
+                    "path": "<XRController>{LeftHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftHandPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "834d1bfb-4b35-436a-90fc-17c34a5c3b0a",
+                    "path": "<XRController>{LeftHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftHandRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5269d215-a47f-4f7e-9cbb-ac505797a1ea",
+                    "path": "<XRController>{RightHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RIghtHandPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8ae414d1-989a-4cd0-9cd1-213a5c14d663",
+                    "path": "<XRController>{RightHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightHandRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "42b82eda-94f2-450e-8b04-edf5b92b645c",
+                    "path": "<XRController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightHandGrab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "04db200e-8438-4693-a0af-f7ed3a5bdd2d",
+                    "path": "<XRController>{LeftHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftHandGrab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
