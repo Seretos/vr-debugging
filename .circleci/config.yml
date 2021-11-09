@@ -33,9 +33,9 @@ executors:
         command: chmod +x ./ci/build.sh && ./ci/build.sh
     - run:
         name: Zipping build
-        command: apt update && apt -y install zip && zip -r "build.zip" ./Builds/
+        command: apt update && apt -y install zip && zip -r "vr-debugging-$BUILD_TARGET.zip" ./Builds/
     - store_artifacts:
-        path: build.zip
+        path: vr-debugging-$BUILD_TARGET.zip
 
 jobs:
   activate:
@@ -49,9 +49,25 @@ jobs:
     <<: *build
     environment:
       BUILD_TARGET: StandaloneWindows64
+  deploy:
+    docker:
+      - image: debian/debian:latest
+    steps:
+      - run:
+          name: install deploy requirements
+          command: sudo apt-get -y update && sudo apt-get -y install unzip wget
+      - run:
+          name: install butler
+          command: curl -L -o butler.zip https://broth.itch.ovh/butler/linux-amd64/LATEST/archive/default && unzip -o butler.zip && chmod +x butler && ./butler -V
+      - run:
+          name: upload game
+          command: ./butler push vr-debugging-$BUILD_TARGET.zip seredos/vr-debugging:linux-channel
 
 workflows:
   build-workflow:
     jobs:
       #- activate
       - build_windows
+      - deploy:
+          requires:
+            - build_windows
