@@ -3,7 +3,8 @@ version: 2.1
 executors:
   unity_exec:
     docker:
-      - image: unityci/editor:2019.4.32f1-windows-mono-0.15
+      - image: unityci/editor:2019.4.32f1-linux-il2cpp-0.15
+      #- image: unityci/editor:2019.4.32f1-windows-mono-0.15
     environment:
       BUILD_NAME: vr-debugging
 
