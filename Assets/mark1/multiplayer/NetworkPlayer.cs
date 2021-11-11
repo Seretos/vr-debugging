@@ -30,10 +30,10 @@ namespace mark1.multiplayer
         {
             if (photonView.IsMine)
             {
-                networkHead.gameObject.SetActive(false);
+                /*networkHead.gameObject.SetActive(false);
                 networkBody.gameObject.SetActive(false);
                 networkRightHand.gameObject.SetActive(false);
-                networkLeftHand.gameObject.SetActive(false);
+                networkLeftHand.gameObject.SetActive(false);*/
 
                 transform.position = playArea.position;
                 transform.rotation = playArea.rotation;
