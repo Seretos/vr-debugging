@@ -3861,6 +3861,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376562405}
   m_Mesh: {fileID: -5198818430024902431, guid: ee8070bad64571a4da811ae36f6c6b61, type: 3}
+--- !u!114 &381365380 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1555912390465894059, guid: f9593e13cd34d84478d864974c813f1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 623392301}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &388697202 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8075069239219041827, guid: f9593e13cd34d84478d864974c813f1a,
@@ -3879,6 +3891,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1090856433}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &408280433 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1555912390465894059, guid: f9593e13cd34d84478d864974c813f1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1467944361}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &411839528
 GameObject:
   m_ObjectHideFlags: 0
@@ -9102,6 +9126,7 @@ GameObject:
   - component: {fileID: 878934523}
   - component: {fileID: 878934525}
   - component: {fileID: 878934524}
+  - component: {fileID: 878934526}
   m_Layer: 0
   m_Name: play_ground
   m_TagString: Untagged
@@ -9167,6 +9192,18 @@ MonoBehaviour:
   sceneViewId: 5
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &878934526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878934522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9966f39e151246b78d4904c52bcdb74d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &882499979 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5175981437294524271, guid: 42ce18a639e288a4ab74236c0817aa7d,
@@ -19803,6 +19840,7 @@ GameObject:
   - component: {fileID: 1750416304}
   - component: {fileID: 1750416306}
   - component: {fileID: 1750416305}
+  - component: {fileID: 1750416307}
   m_Layer: 0
   m_Name: play_ground
   m_TagString: Untagged
@@ -19857,10 +19895,24 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 2
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 408280433}
+  - {fileID: 381365380}
   sceneViewId: 7
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &1750416307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750416303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9966f39e151246b78d4904c52bcdb74d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1755406661 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1555912390465894059, guid: f9593e13cd34d84478d864974c813f1a,

@@ -1,11 +1,11 @@
-﻿using mark1.world;
+﻿using System;
+using mark1.world;
 using Photon.Pun;
 using UnityEngine;
 
 namespace mark1.multiplayer
 {
-    [RequireComponent(typeof(BoxCollider))]
-    public class NetworkPlayer : MonoBehaviourPunCallbacks
+    public class NetworkPlayer : UserBehaviourPunCallbacks
     {
         public Transform head;
         public Transform body;
@@ -18,11 +18,12 @@ namespace mark1.multiplayer
         public Transform networkRightHand;
         public Transform networkLeftHand;
 
-        private BoxCollider _collider;
-
         private void Start()
         {
-            _collider = GetComponent<BoxCollider>();
+            if (photonView.IsMine)
+            {
+                SetUser(PhotonNetwork.AuthValues.UserId);
+            }
         }
 
         private void Update()
@@ -53,18 +54,6 @@ namespace mark1.multiplayer
                 networkBody.position = body.position;
                 //networkBody.localScale = body.lossyScale;
                 networkBody.rotation = body.rotation;
-            }
-
-            Vector3 centerPos = transform.InverseTransformPoint(networkBody.position);
-            centerPos = new Vector3(centerPos.x, 0.0f, centerPos.z);
-            _collider.center = centerPos;
-        }
-
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.GetComponent<Position>())
-            {
-                transform.parent = other.transform;
             }
         }
     }
