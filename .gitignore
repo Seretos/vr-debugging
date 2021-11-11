@@ -3,6 +3,8 @@
 .env
 tmp.log
 
+/Assets/csc.rsp
+/Assets/csc.rsp.meta
 /[Ll]ibrary/
 /[Ll]ogs/
 /[Tt]emp/
