@@ -10,6 +10,7 @@ namespace mark1.multiplayer
         public Transform body;
         public Transform rightHand;
         public Transform leftHand;
+        public Transform playArea;
         private GameObject _networkPlayerInstance;
         
         void Start()
@@ -30,7 +31,12 @@ namespace mark1.multiplayer
             roomOptions.IsVisible = true;
             roomOptions.IsOpen = true;
             roomOptions.PublishUserId = true;
-            PhotonNetwork.JoinOrCreateRoom("dev", roomOptions, TypedLobby.Default);
+            string room = "prod";
+# if (DEV_ROOM)
+            room = "dev";
+#endif
+            PhotonNetwork.JoinOrCreateRoom(room, roomOptions, TypedLobby.Default);
+            Debug.Log("room " + room);
         }
 
         public override void OnJoinedRoom()
@@ -44,6 +50,7 @@ namespace mark1.multiplayer
             netPlayer.body = body;
             netPlayer.rightHand = rightHand;
             netPlayer.leftHand = leftHand;
+            netPlayer.playArea = playArea;
         }
 
         public override void OnLeftRoom()

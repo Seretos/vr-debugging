@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5605579275502966149}
   - component: {fileID: 3955674067915134294}
   - component: {fileID: 4951010621175036291}
+  - component: {fileID: 7578779541063817926}
   m_Layer: 0
   m_Name: generic_avatar
   m_TagString: Untagged
@@ -52,6 +53,7 @@ MonoBehaviour:
   body: {fileID: 0}
   rightHand: {fileID: 0}
   leftHand: {fileID: 0}
+  playArea: {fileID: 0}
   networkHead: {fileID: 8978989229882779600}
   networkBody: {fileID: 6603221624771897641}
   networkRightHand: {fileID: 7936031039699721404}
@@ -82,6 +84,19 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!65 &7578779541063817926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544574457075179390}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1411602456937781774
 GameObject:
   m_ObjectHideFlags: 0
