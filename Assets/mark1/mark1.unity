@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 14145872}
   - component: {fileID: 14145876}
   - component: {fileID: 14145875}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 35044928}
   - component: {fileID: 35044927}
   - component: {fileID: 35044926}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftHand Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3755,7 +3755,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 366958674}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bodyPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4556,7 +4556,7 @@ GameObject:
   - component: {fileID: 492944379}
   - component: {fileID: 492944378}
   - component: {fileID: 492944377}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: XR Rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9185,7 +9185,7 @@ GameObject:
   - component: {fileID: 882927329}
   - component: {fileID: 882927328}
   - component: {fileID: 882927330}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightHand Controller (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11218,7 +11218,7 @@ GameObject:
   - component: {fileID: 1073402057}
   - component: {fileID: 1073402056}
   - component: {fileID: 1073402055}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightHand Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16814,7 +16814,7 @@ GameObject:
   - component: {fileID: 1578280069}
   - component: {fileID: 1578280071}
   - component: {fileID: 1578280070}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlayArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21607,7 +21607,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1894364826}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Camera Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22856,7 +22856,7 @@ GameObject:
   - component: {fileID: 2020462355}
   - component: {fileID: 2020462354}
   - component: {fileID: 2020462353}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

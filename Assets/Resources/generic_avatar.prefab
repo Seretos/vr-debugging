@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 3955674067915134294}
   - component: {fileID: 4951010621175036291}
   - component: {fileID: 7578779541063817926}
-  m_Layer: 0
+  - component: {fileID: 7434209822978642420}
+  m_Layer: 8
   m_Name: generic_avatar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,6 +98,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7434209822978642420
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544574457075179390}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1411602456937781774
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,7 +126,7 @@ GameObject:
   - component: {fileID: 5799165709075480151}
   - component: {fileID: 8445357987011078243}
   - component: {fileID: 469156252432032481}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +203,7 @@ SphereCollider:
   m_GameObject: {fileID: 1411602456937781774}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -200,7 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7936031039699721404}
   - component: {fileID: 4345804874517155120}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8978989229882779600}
   - component: {fileID: 287064863138571625}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3264735116300492392}
   - component: {fileID: 1950698296861588479}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +363,7 @@ GameObject:
   - component: {fileID: 3921812850430647505}
   - component: {fileID: 1528685392137256376}
   - component: {fileID: 1565191960262387257}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +440,7 @@ SphereCollider:
   m_GameObject: {fileID: 5811918692339873761}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -439,7 +456,7 @@ GameObject:
   - component: {fileID: 2417328691666567162}
   - component: {fileID: 438543069917795661}
   - component: {fileID: 9005167635909829322}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,7 +533,7 @@ SphereCollider:
   m_GameObject: {fileID: 6705631204418217068}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -530,7 +547,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6603221624771897641}
   - component: {fileID: 1895969688067610199}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -580,7 +597,7 @@ GameObject:
   - component: {fileID: 13901780913875731}
   - component: {fileID: 1504055720357464327}
   - component: {fileID: 9037468762799386680}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -657,7 +674,7 @@ SphereCollider:
   m_GameObject: {fileID: 8673532509698174240}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
