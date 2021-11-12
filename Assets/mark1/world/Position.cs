@@ -9,6 +9,7 @@ namespace mark1.world
     {
         public Transform anchor;
         private AreaGroup _areaGroup;
+        public bool blocked = false;
 
         private void Start()
         {

@@ -48,9 +48,11 @@ namespace mark1.world
         
         private void OnTriggerEnter(Collider other)
         {
-            if (other.GetComponent<Position>())
+            Position pos = other.GetComponent<Position>();
+            if (pos && !pos.blocked)
             {
-                _enteredPositions.Add(other.GetComponent<Position>());
+                if(!_currentPosition || !_currentPosition.blocked)
+                    _enteredPositions.Add(pos);
             }
         }
 
