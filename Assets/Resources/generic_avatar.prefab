@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5605579275502966149}
   - component: {fileID: 3955674067915134294}
   - component: {fileID: 4951010621175036291}
-  - component: {fileID: 1829948245928848565}
   m_Layer: 8
   m_Name: generic_avatar
   m_TagString: Untagged
@@ -78,7 +77,6 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 1829948245928848565}
   - {fileID: 287064863138571625}
   - {fileID: 1895969688067610199}
   - {fileID: 1950698296861588479}
@@ -86,22 +84,6 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &1829948245928848565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544574457075179390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 1
-  m_UseLocal: 1
 --- !u!1 &1411602456937781774
 GameObject:
   m_ObjectHideFlags: 0

@@ -41,18 +41,18 @@ namespace mark1.multiplayer
 
                 networkHead.position = head.position;
                 networkHead.rotation = head.rotation;
-                //networkHead.localScale = head.lossyScale;
+                networkHead.localScale = head.lossyScale;
 
                 networkRightHand.position = rightHand.position;
                 networkRightHand.rotation = rightHand.rotation;
-                //networkRightHand.localScale = rightHand.lossyScale;
+                networkRightHand.localScale = rightHand.lossyScale;
 
                 networkLeftHand.position = leftHand.position;
                 networkLeftHand.rotation = leftHand.rotation;
-                //networkLeftHand.localScale = leftHand.lossyScale;
+                networkLeftHand.localScale = leftHand.lossyScale;
 
                 networkBody.position = body.position;
-                //networkBody.localScale = body.lossyScale;
+                networkBody.localScale = body.lossyScale;
                 networkBody.rotation = body.rotation;
             }
         }
