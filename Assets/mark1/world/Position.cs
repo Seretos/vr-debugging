@@ -17,7 +17,7 @@ namespace mark1.world
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.GetComponent<Player>())
+            if (other.GetComponent<Player>() && _areaGroup)
             {
                 _areaGroup.PlayerEnterGroup();
             }

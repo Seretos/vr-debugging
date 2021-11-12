@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 
 namespace mark1.state
 {
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : MonoBehaviourPunCallbacks
     {
         public PlayerState[] states;
         public enum PlayerStateType
@@ -33,8 +35,26 @@ namespace mark1.state
             {
                 _dictionary[playerStateType].gameObject.SetActive(false);
             }
-            
+
             SetActiveState(PlayerStateType.Start);
+        }
+
+        private bool _joined = false;
+        private bool _setState = false;
+        
+        public override void OnJoinedRoom()
+        {
+            base.OnJoinedRoom();
+            _joined = true;
+        }
+
+        private void Update()
+        {
+            if (PhotonNetwork.InRoom && _joined && !_setState)
+            {
+                _setState = true;
+                SetActiveState(PlayerStateType.Game);
+            }
         }
 
         public void SetActiveState(PlayerStateType newState)
