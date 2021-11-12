@@ -18334,7 +18334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   head: {fileID: 14145874}
   body: {fileID: 366958674}
-  rightHand: {fileID: 1073402054}
+  rightHand: {fileID: 882927327}
   leftHand: {fileID: 35044925}
   playArea: {fileID: 492944376}
 --- !u!4 &1648159472
