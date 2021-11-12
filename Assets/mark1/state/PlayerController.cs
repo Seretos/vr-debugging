@@ -41,6 +41,7 @@ namespace mark1.state
 
         private bool _joined = false;
         private bool _setState = false;
+        private float _waitTime = 0;
         
         public override void OnJoinedRoom()
         {
@@ -50,7 +51,9 @@ namespace mark1.state
 
         private void Update()
         {
-            if (PhotonNetwork.InRoom && _joined && !_setState)
+            if (_joined)
+                _waitTime += Time.deltaTime;
+            if (PhotonNetwork.InRoom && _joined && !_setState && _waitTime > 10)
             {
                 _setState = true;
                 SetActiveState(PlayerStateType.Game);
