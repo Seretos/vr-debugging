@@ -35,9 +35,9 @@ namespace mark1.multiplayer
                 networkRightHand.gameObject.SetActive(false);
                 networkLeftHand.gameObject.SetActive(false);
 
-                //transform.position = playArea.position;
-                //transform.rotation = playArea.rotation;
-                //transform.localScale = playArea.lossyScale;
+                transform.position = playArea.position;
+                transform.rotation = playArea.rotation;
+                transform.localScale = playArea.lossyScale;
 
                 networkHead.position = head.position;
                 networkHead.rotation = head.rotation;
