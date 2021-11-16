@@ -19,7 +19,7 @@ namespace mark1.world
             {
                 if (networkPlayer.GetUser() == user)
                 {
-                    networkPlayer.transform.parent = transform;
+                    //networkPlayer.transform.parent = transform;
                 }
             }
         }
