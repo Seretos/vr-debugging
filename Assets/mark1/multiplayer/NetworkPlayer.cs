@@ -37,7 +37,7 @@ namespace mark1.multiplayer
 
                 transform.position = playArea.position;
                 transform.rotation = playArea.rotation;
-                transform.localScale = playArea.lossyScale;
+                //transform.localScale = playArea.lossyScale;
 
                 networkHead.position = head.position;
                 networkHead.rotation = head.rotation;
@@ -53,7 +53,7 @@ namespace mark1.multiplayer
 
                 networkBody.position = body.position;
                 networkBody.localScale = body.lossyScale;
-                networkBody.rotation = body.rotation;
+                //networkBody.rotation = body.rotation;
             }
         }
     }

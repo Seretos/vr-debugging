@@ -39,7 +39,7 @@ namespace mark1.state
             SetActiveState(PlayerStateType.Start);
         }
 
-        private bool _joined = false;
+        /*private bool _joined = false;
         private bool _setState = false;
         private float _waitTime = 0;
         
@@ -58,7 +58,7 @@ namespace mark1.state
                 _setState = true;
                 SetActiveState(PlayerStateType.Game);
             }
-        }
+        }*/
 
         public void SetActiveState(PlayerStateType newState)
         {
